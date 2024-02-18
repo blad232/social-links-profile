@@ -1,0 +1,124 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"); */
+@font-face {
+	font-family: "Inter";
+	src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+:root {
+	--Green: hsl(75, 94%, 57%);
+
+	--White: hsl(0, 0%, 100%);
+	--Buttons: hsl(0, 0%, 20%);
+	--Profile-Card: hsl(0, 0%, 12%);
+	--Off-Black: hsl(0, 0%, 8%);
+	--Grey: hsl(0, 0%, 63%);
+}
+html {
+	font-size: 62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--Off-Black);
+}
+
+.profile-card {
+	margin: 15rem 0;
+}
+.profile-card {
+	min-width: 325px;
+	min-height: 600px;
+	background-color: var(--Profile-Card);
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	overflow: auto;
+}
+div > .img {
+	margin: 3rem auto;
+	width: 100px;
+	height: 100px;
+	background-image: url("../assets/images/avatar-jessica.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+.header,
+li,
+div.attribution {
+	text-align: center;
+	font-family: "Inter";
+}
+h1,
+h2 {
+	margin: 1rem;
+}
+p {
+	margin: 3.4rem 0 2.8rem 0;
+}
+h1 {
+	color: var(--White);
+	font-weight: 400;
+	font-size: 3rem;
+}
+h2 {
+	color: var(--Green);
+	font-weight: 500;
+}
+p {
+	color: var(--Grey);
+	font-size: 1.5rem;
+}
+
+li {
+	border: none;
+	background-color: var(--Buttons);
+	display: block;
+	margin: 2rem auto;
+	width: 90%;
+	padding: 0;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+li > a {
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: var(--White);
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 2rem;
+}
+li:hover {
+	color: var(--Grey);
+	background-color: var(--Green);
+}
+div.attribution {
+	margin-bottom: 2rem;
+	font-size: 1rem;
+	color: var(--White);
+}
+div.attribution > a {
+	color: var(--Green);
+}
+
+@media only screen and (min-width: 640px) {
+	.profile-card {
+		min-width: 375px;
+	}
+}
